@@ -1,0 +1,16 @@
+:root { --brand: #0f766e; --brand-dark: #0b5a54; --soft: #e8f5f2; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #fbfdfc; color: #1f2d2b; min-height: 100vh; display: flex; flex-direction: column; }
+footer { margin-top: auto; background: #12332f; color: #cfe7e2; text-align: center; padding: 18px 10px; }
+.navbar { background: var(--brand); }
+.navbar .nav-link, .navbar-brand { color: #fff !important; }
+.navbar .nav-link.active { font-weight: 700; border-bottom: 2px solid #fff; }
+.hero { background: linear-gradient(135deg, #0f766e, #14b8a6); color: #fff; padding: 90px 0; animation: fadeIn 0.9s ease; }
+.btn-brand { background: var(--brand); color: #fff; }
+.btn-brand:hover { background: var(--brand-dark); color: #fff; }
+.card { border: 1px solid #d7ebe6; border-radius: 12px; }
+.icon { font-size: 2rem; }
+.bg-soft { background: var(--soft); }
+.price { color: var(--brand); font-weight: 700; font-size: 1.2rem; }
+.table th { background: var(--soft); }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .hero { animation: none; } }
